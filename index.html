@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title>First App</title>
+
+</head>
+
+<body>
+	<button id="firapp">do it</button>
+	<button id="clear">clear</button>
+	<div id="results">
+	</div>
+	
+	<script src="js/zepto.js"></script>
+	<script src="js/firstapp.js"></script>
+	
+	<script>
+	$("#firapp").click(function(){
+		FIRSTAPP.doit($("#results"));
+	});
+	
+	$("#clear").click(function(){
+		$("#results").html("");
+	});
+	</script>
+</body>
+
+</html>
